@@ -8,5 +8,6 @@ Pearson and Correlation Test Analysis
 Comparing exam scores by low, medium and high study hours groups.
 
 <img width="295" height="242" alt="study_plot_anova" src="https://github.com/user-attachments/assets/df829dcb-303f-4572-8546-0d022cc40935" />
+
 ## t-test
 ## Chi-Square Test
