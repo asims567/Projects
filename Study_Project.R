@@ -19,3 +19,21 @@ ggplot(data, aes(x = study_hours, y = exam_scores)) +
 
 cor(data$study_hours, data$exam_scores)
 cor.test(data$study_hours, data$exam_scores)
+
+data$group_anova <- cut(data$study_hours, breaks=c(0,4,6,10), labels=c("Low","Medium","High"))
+
+anova_result <- aov(exam_scores ~ group_anova, data = data)
+summary(anova_result)
+
+p_anova <- ggplot(data, aes(x = group_anova, y = exam_scores, fill = group_anova)) +
+  geom_boxplot() +
+  labs(title = "ANOVA: Exam Scores by Study Hours Group",
+       x = "Study Hours Group",
+       y = "Exam Scores") +
+  theme_classic() +
+  scale_fill_manual(values = c("Low"="#1f77b4", "Medium"="#2ca02c", "High"="#ff7f0e"))
+
+print(p_anova)
+
+
+
