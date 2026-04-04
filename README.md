@@ -3,6 +3,6 @@ This project involves analyzing the relationship between study hours and exam sc
 ## Pearson and Correlation Test
 ## ANOVA test
 Comparing exam scores by low, medium and high study hours groups.
-![ANOVA Plot](study_plot_anova.png)
+![ANOVA Plot](study_plot_anova.PNG)
 ## t-test
 ## Chi-Square Test
