@@ -2,7 +2,7 @@
 This project involves analyzing the relationship between study hours and exam scores to determine whether they are correlated. It involves a series of testing methods and a scatter plot to showcase the trends. 
 ## Pearson and Correlation Test
 ## ANOVA test
-comparing exam scores by low, medium and high study hours groups.
-![ANOVA Plot](anova.PNG)
+Comparing exam scores by low, medium and high study hours groups.
+![ANOVA Plot](study_plot_anova.png)
 ## t-test
 ## Chi-Square Test
