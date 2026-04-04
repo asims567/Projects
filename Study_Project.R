@@ -35,5 +35,18 @@ p_anova <- ggplot(data, aes(x = group_anova, y = exam_scores, fill = group_anova
 
 print(p_anova)
 
+p_cor <- ggplot(data, aes(x = study_hours, y = exam_scores)) +
+  geom_point(size = 3, color = "blue") + 
+  geom_smooth(method = "lm", se = TRUE, color = "red") + 
+  labs(title = "Correlation: Study Hours vs Exam Scores", 
+       x = "Study Hours", 
+       y = "Exam Scores") +
+  theme_classic() 
+
+print(p_cor)
+
+r_value <- round(cor(data$study_hours, data$exam_scores), 2)
+p_cor + annotate("text", x = 3, y = 85, label = paste("r =", r_value), size = 5, color = "black")
+
 
 
