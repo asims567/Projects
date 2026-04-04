@@ -1,3 +1,3 @@
 # Projects
-Coding Work and Development
+Academic Coding Work and Development
 Plots
