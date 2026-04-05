@@ -13,6 +13,7 @@ Comparing exam scores by low, medium and high study hours groups.
 
 ## t-test
 The t-test in a boxplot with the High and Low Study Groups.
+
 <img width="317" height="242" alt="Boxplot Study Hours vs Exam Scores" src="https://github.com/user-attachments/assets/1de7862c-5daf-4b44-842f-64610c423cad" />
 
 
