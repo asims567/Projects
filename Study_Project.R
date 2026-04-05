@@ -48,5 +48,42 @@ print(p_cor)
 r_value <- round(cor(data$study_hours, data$exam_scores), 2)
 p_cor + annotate("text", x = 3, y = 85, label = paste("r =", r_value), size = 5, color = "black")
 
+data$group <- ifelse(data$study_hours < 5, "Low", "High")
+data$pass_fail <- ifelse(data$exam_scores >= 65, "Pass", "Fail")
 
+p_chi <- ggplot(data, aes(x = group, fill = pass_fail)) +
+  geom_bar(position = "dodge") +
+  labs(
+    title = "Chi-Square: Pass/Fail by Study Group",
+    x = "Study Group",
+    y = "Number of Students"
+  ) +
+  scale_fill_manual(values = c("Fail" = "#d62728", "Pass" = "#2ca02c")) +
+  theme_classic()
 
+print(p_chi)
+
+data$group <- ifelse(data$study_hours < 5, "Low", "High")
+
+t_result <- t.test(exam_scores ~ group, data = data)
+print(t_result)
+
+t_value <- t_result$statistic
+p_value <- t_result$p.value
+
+print(t_value)
+print(p_value)
+
+library(ggplot2)
+
+p_ttest <- ggplot(data, aes(x = group, y = exam_scores, fill = group)) +
+  geom_boxplot() +
+  labs(
+    title = "t-test: Exam Scores by Study Group",
+    x = "Study Group",
+    y = "Exam Scores"
+  ) +
+  scale_fill_manual(values = c("Low" = "#1f77b4", "High" = "#ff7f0e")) +
+  theme_classic()
+
+print(p_ttest)
