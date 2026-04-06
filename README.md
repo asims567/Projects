@@ -1,5 +1,23 @@
 # Case Study Project
-This project involves analyzing the relationship between study hours and exam scores with a random sample to determine whether they are correlated. It involves a series of testing methods and a scatter plot to showcase the trends. 
+This project involves analyzing the relationship between study hours and exam scores with a random sample to determine whether they are correlated. Below is the data set presented in a table:
+
+| Study Hours | Exam Scores |
+|-------------|-------------|
+| 2           | 50          |
+| 3           | 55          |
+| 4           | 60          |
+| 5           | 65          |
+| 6           | 70          |
+| 7           | 75          |
+| 8           | 80          |
+| 2           | 52          |
+| 4           | 63          |
+| 6           | 72          |
+| 5           | 67          |
+| 7           | 78          |
+| 3           | 58          |
+| 8           | 82          |
+| 9           | 90          |
 
 ## Pearson and Correlation Test
 Pearson correlation was used to evaluate the strength and direction of the linear relationship between study hours and exam scores.
